@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio BS</title>
+    <link rel="stylesheet" href="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_css_bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header id="head">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>CODE SPACE</h1>
+                <button data-bs-toggle="collapse" data-bs-target="#menu" type="button" class="navbar-toggler">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav nav-pills navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#head">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#artigos">Artigos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="ex-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item active">
+                <img class="d-block" src="./img/img1.jpg">
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block" src="./img/img2.jpg">
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block" src="./img/img3.jpg">
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <button data-bs-target="#ex-carousel" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#ex-carousel" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button data-bs-target="#ex-carousel" data-bs-slide-to="0" class="active" type="button"></button>
+                <button data-bs-target="#ex-carousel" data-bs-slide-to="1" type="button"></button>
+                <button data-bs-target="#ex-carousel" data-bs-slide-to="2" type="button"></button>
+            </div>
+        </div>
+    </div>
+    <div data-bs-spy="scroll" data-bs-target="#head">
+        <div id="artigos" class="container">
+            <h1 id="body-h1">Tipos de estrelas</h1>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card text-bg-dark">
+                        <div class="card-header">
+                            Estrela Azul
+                        </div>
+                        <img src="./img/estrela-azul.jpg">
+                        <div class="card-body">
+                            <p>São estrelas extremamente quentes, a temperatura de sua superfície pode atingir 30.000 K, são estrelas muito “novas” em comparação com os demais tipos de estrelas. A maioria dessas estrelas foi criada há menos 40 milhões de anos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card text-bg-dark">
+                        <div class="card-header">
+                            Anãs amarelas
+                        </div>
+                        <img src="./img/amarela.jpg">
+                        <div class="card-body">
+                            <p>Assim como o Sol, essas estrelas são muito antigas, existindo há bilhões de anos. O futuro dessas estrelas é o de se tornar uma gigante vermelha.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card text-bg-dark">
+                        <div class="card-header">
+                            Anãs vermelhas
+                        </div>
+                        <img src="./img/vermelha.jpg">
+                        <div class="card-body">
+                            <p>São as estrelas mais comuns, representam cerca de 73% das estrelas do Universo. Seu brilho é fraco, são estrelas pouco massivas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card text-bg-dark">
+                        <div class="card-header">
+                            Anãs brancas
+                        </div>
+                        <img src="./img/branca.jpg">
+                        <div class="card-body">
+                            <p>Essas estrelas são formadas pelos núcleos de outras estrelas que ejetaram suas camadas externas, essas estrelas já não produzem mais fusões nucleares e comumente rotacionam em torno de seus eixos com velocidades muito altas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card text-bg-dark">
+                        <div class="card-header">
+                            Estrelas de nêutrons
+                        </div>
+                        <img src="./img/neutrons.jpg">
+                        <div class="card-body">
+                            <p>São estrelas que foram tão comprimidas que todos os seus prótons e elétrons ejetaram-se em razão da repulsão elétrica. São muito pequenas, têm entre 5 e 15 km de raio e suas temperaturas excedem centenas de milhares de graus Celsius.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card text-bg-dark">
+                        <div class="card-header">
+                            Supergigantes azuis
+                        </div>
+                        <img src="./img/super.jpg">
+                        <div class="card-body">
+                            <p> São raras, extremamente quentes e brilhantes, podem apresentar até mil vezes a massa solar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="contato" class="container">
+            <div class="contact">
+                <div>
+                    <ul class="links  p-3">
+                        <li>
+                            <a href="#" title="siga-nos no instagram">
+                                <img src="./img/insta.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="acompanhe-nos no Facebook">
+                                <img src="./img/face.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="entre em contato no Whatsapp">
+                                <img src="./img/wts.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p id="copy" class="p-3">
+                        &copy;Code Space - Todos os direitos reservados - 2023
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.bundle.min.js"></script>
+</body>
+</html>
